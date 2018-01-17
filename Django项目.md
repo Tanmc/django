@@ -575,7 +575,7 @@ class User(AbstractUser, BaseModel):
         """生成用户激活的令牌"""
         # 创建序列化工具对象
         s = Serializer(setting.SECRET_KEY， USER_ACTIVE_EXPIRES)
-        token = s.dump({"user_id"}: self.id)
+        token = s.dumps({"user_id"}: self.id)
         return token.decode()  #将字节类型转换成字符串
 
 ```
