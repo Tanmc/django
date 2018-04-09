@@ -329,7 +329,7 @@ class MasterSlaveRouter(object):
 		retrun True
 ```
 
-课后阅读资料
+
 
 <http://python.usyiyi.cn/documents/django_182/topics/db/multi-db.html>
 
